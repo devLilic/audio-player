@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--    Player-->
+<div class="container">
+    <div class="img-container">
+        <img src="./img/jacinto-1.jpg" alt="" class="song-img">
+    </div>
+    <audio id="audio"></audio>
+
+    <div class="controls">
+        <div class="row pb-2">
+            <div class="empty"></div>
+            <button class="brev-btn btn-small text-white border rounded-full bg-red-300 text-2xl" id="prevBtn">
+                <i class="fa-solid fa-backward-fast"></i>
+            </button>
+
+            <button class="btn-large text-white border rounded-full bg-red-300 text-2xl" id="playBtn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button class="next-btn btn-small text-white border rounded-full bg-red-300 text-2xl" id="nextBtn">
+                <i class="fa-solid fa-forward-fast"></i>
+            </button>
+
+            <div class="volume-block">
+                <span id="volume-indicator" class="volume-indicator">0.5</span>
+                <input class="slider volume-slider" type="range" id="volume" min="0" max="2" value="1" step="0.01">
+
+                <button class="mute-btn btn-small" id="muteSound">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="progress-block flex">
+        <span id="progress-indicator"
+              class="progress-indicator flex-shrink-0">0</span>
+            <input class="slider progress-input"
+                   type="range"
+                   id="progress-input"
+                   min="0"
+                   value="0"
+                   step="0.01">
+            <span id="progress-total-time-indicator" class="progress-total-time-indicator flex-shrink-0">0</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
