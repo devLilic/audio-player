@@ -19,41 +19,48 @@
     </div>
     <audio id="audio"></audio>
 
-    <div class="controls">
-        <div class="row pb-2">
-            <div class="empty"></div>
-            <button class="brev-btn btn-small text-white border rounded-full bg-red-300 text-2xl" id="prevBtn">
+    <div class="controls bg-emerald-600">
+        <div class="row pb-2 flex items-center justify-around">
+            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="prevBtn">
                 <i class="fa-solid fa-backward-fast"></i>
             </button>
 
-            <button class="btn-large text-white border rounded-full bg-red-300 text-2xl" id="playBtn">
+            <button class="rounded-full text-2xl w-3 border px-4 py-2 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="playBtn">
                 <i class="fa-solid fa-play"></i>
             </button>
 
-            <button class="next-btn btn-small text-white border rounded-full bg-red-300 text-2xl" id="nextBtn">
+            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="nextBtn">
                 <i class="fa-solid fa-forward-fast"></i>
             </button>
 
-            <div class="volume-block">
-                <span id="volume-indicator" class="volume-indicator">0.5</span>
-                <input class="slider volume-slider" type="range" id="volume" min="0" max="2" value="1" step="0.01">
+<!--            <div class="volume-block">-->
+<!--                <span id="volume-indicator" class="volume-indicator">0.5</span>-->
+<!--                <input class="slider volume-slider" type="range" id="volume" min="0" max="2" value="1" step="0.01">-->
 
-                <button class="mute-btn btn-small" id="muteSound">
-                    <i class="fa-solid fa-volume-xmark"></i>
-                </button>
-            </div>
+<!--                <button class="mute-btn btn-small" id="muteSound">-->
+<!--                    <i class="fa-solid fa-volume-xmark"></i>-->
+<!--                </button>-->
+<!--            </div>-->
         </div>
 
-        <div class="progress-block flex">
-        <span id="progress-indicator"
-              class="progress-indicator flex-shrink-0">0</span>
-            <input class="slider progress-input"
-                   type="range"
-                   id="progress-input"
-                   min="0"
-                   value="0"
-                   step="0.01">
-            <span id="progress-total-time-indicator" class="progress-total-time-indicator flex-shrink-0">0</span>
+<!--        <div class="progress-block flex">-->
+<!--        <span id="progress-indicator"-->
+<!--              class="progress-indicator flex-shrink-0">0</span>-->
+<!--            <input class="slider progress-input"-->
+<!--                   type="range"-->
+<!--                   id="progress-input"-->
+<!--                   min="0"-->
+<!--                   value="0"-->
+<!--                   step="0.01">-->
+<!--            <span id="progress-total-time-indicator" class="progress-total-time-indicator flex-shrink-0">0</span>-->
+<!--        </div>-->
+
+        <div class="progress flex justify-between flex-wrap text-lg text-white">
+            <span class="current-duration indicator" id="current-duration">0:13</span>
+            <span class="total-duration indicator" id="total-duration">2:06</span>
+            <div class="progress-bar w-full h-1 bg-gray-100 mt-2 rounded cursor-pointer">
+                <div class="progress-status bg-gray-900 w-10/12 h-full"></div>
+            </div>
         </div>
     </div>
 
