@@ -21,15 +21,15 @@
 
     <div class="controls bg-emerald-600">
         <div class="row pb-2 flex items-center justify-around">
-            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="prevBtn">
+            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer border-gray-900" id="prevBtn">
                 <i class="fa-solid fa-backward-fast"></i>
             </button>
 
-            <button class="rounded-full text-2xl w-3 border px-4 py-2 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="playBtn">
+            <button class="rounded-full text-2xl w-2 border px-4 py-2 bg-white hover:text-gray-900 text-gray-700 cursor-pointer border-gray-900" id="playBtn">
                 <i class="fa-solid fa-play"></i>
             </button>
 
-            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer outline-none" id="nextBtn">
+            <button class="border rounded-full text-sm px-2 py-1 bg-white hover:text-gray-900 text-gray-700 cursor-pointer border-gray-900" id="nextBtn">
                 <i class="fa-solid fa-forward-fast"></i>
             </button>
 
@@ -43,27 +43,14 @@
 <!--            </div>-->
         </div>
 
-<!--        <div class="progress-block flex">-->
-<!--        <span id="progress-indicator"-->
-<!--              class="progress-indicator flex-shrink-0">0</span>-->
-<!--            <input class="slider progress-input"-->
-<!--                   type="range"-->
-<!--                   id="progress-input"-->
-<!--                   min="0"-->
-<!--                   value="0"-->
-<!--                   step="0.01">-->
-<!--            <span id="progress-total-time-indicator" class="progress-total-time-indicator flex-shrink-0">0</span>-->
-<!--        </div>-->
-
         <div class="progress flex justify-between flex-wrap text-lg text-white">
-            <span class="current-duration indicator" id="current-duration">0:13</span>
-            <span class="total-duration indicator" id="total-duration">2:06</span>
-            <div class="progress-bar w-full h-1 bg-gray-100 mt-2 rounded cursor-pointer">
-                <div class="progress-status bg-gray-900 w-10/12 h-full"></div>
+            <span class="current-duration indicator" id="current-duration">00:00</span>
+            <span class="total-duration indicator" id="total-duration"></span>
+            <div class="progress-bar w-full h-2 bg-gray-100 mt-2 rounded cursor-pointer" id="progress" >
+                <div class="progress-status bg-gray-900 h-full rounded" style="width: 0"></div>
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- Script -->
